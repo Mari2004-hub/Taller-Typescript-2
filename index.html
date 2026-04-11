@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TV Series</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<style>
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.table {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #dee2e6;
+}
+.table {
+  width: 100%;
+  border: 1px solid #dee2e6;
+}
+
+.table th, .table td {
+  text-align: left;       
+  vertical-align: middle;
+  padding: 8px;
+}
+
+.table thead th {
+  background-color: #f8f9fa; 
+  color: #333;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table td:nth-child(2) {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.summary {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+</style>
+
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Columna izquierda: tabla -->
+      <div class="col-md-6">
+        <h1 class="mb-4">TV Series</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Channel</th>
+              <th scope="col">Seasons</th>
+            </tr>
+          </thead>
+          <tbody id="seriesTable">
+            <!-- Filas generadas dinámicamente -->
+          </tbody>
+        </table>
+        <div id="average"></div>
+      </div>
+
+      
+      <div class="col-md-6">
+        <div id="seriesDetail"></div>
+      </div>
+    </div>
+  </div>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
