@@ -13,6 +13,7 @@ function renderSeriesInTable(seriesList: any[]): void {
       <td>${serie.seasons}</td>
     `;
 
+    
     row.addEventListener("click", () => showSeriesDetail(serie));
     tableBody.appendChild(row);
   });
