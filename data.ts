@@ -1,5 +1,4 @@
 import { Serie } from './serie.js';
-
 export const series: Serie[] = [
   new Serie(1, "Breaking Bad", "AMC", 5,
     "Set and filmed in Albuquerque, New Mexico, the series tells the story of Walter White, a struggling and depressed high school chemistry teacher who is diagnosed with lung cancer.",
